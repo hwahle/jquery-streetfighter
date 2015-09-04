@@ -29,3 +29,19 @@ $('.ryu-ready').show();
   	$('#hadouken-sound')[0].load();
   	$('#hadouken-sound')[0].play();
 }
+$(document).keydown(function(e) {
+	if (e.keyCode == 88) {
+		$('.ryu-ready').hide();
+		$('.ryu-still').hide();
+		$('.ryu-cool').show();
+	}
+})
+	.keyup(function(e) {
+		if (e.keyCode == 88) {
+			$('.ryu-still').show();
+			$('.ryu-cool').hide();
+			$('.ryu-ready').hide();
+		}
+	})
+	
+
