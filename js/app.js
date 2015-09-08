@@ -34,13 +34,15 @@ $(document).keydown(function(e) {
 		$('.ryu-ready').hide();
 		$('.ryu-still').hide();
 		$('.ryu-cool').show();
+		$('.ryu-throwing').hide();
 	}
 })
 	.keyup(function(e) {
 		if (e.keyCode == 88) {
-			$('.ryu-still').show();
+			$('.ryu-still').hide();
 			$('.ryu-cool').hide();
-			$('.ryu-ready').hide();
+			$('.ryu-ready').show();
+			$('.ryu-throwing').hide();
 		}
 	})
 	
